@@ -1,4 +1,4 @@
-# LearningFolder
+# LearningFolder for .Net Core
 Learning and practice projects
 
 This is a learning project.
