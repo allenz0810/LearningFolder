@@ -6,7 +6,8 @@ It follows what Shawn Wildermuth has taught in Building a Web App with ASP.NET C
 
 
 ---------------------
-# install
+# installation
+
 1 - Migrations
   run commend to create local database 
   - dotnet ef database update
