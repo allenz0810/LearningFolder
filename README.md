@@ -14,7 +14,7 @@ It follows what Shawn Wildermuth has taught in Building a Web App with ASP.NET C
 
 2 - Bing Map
 
-go to bing map get the key and place under config.json
+  - go to bing map get the key and place under config.json
 
   "Keys": {
     "BingKey": "DONTEVERPUTKEYSINSOURCECONTROL"
