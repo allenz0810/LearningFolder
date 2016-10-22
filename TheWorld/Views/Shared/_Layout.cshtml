@@ -70,9 +70,12 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <enviroment name="Development">
+        <script src="~/js/site.js"></script>
+    </enviroment>
+    <enviroment name="Production,Staging">
+        <script src="~/lib/_app/site.js"></script>
+    </enviroment>
     @RenderSection("scripts", false)
-
-    <script src="~/js/site.js"></script>
 </body>
 </html>
