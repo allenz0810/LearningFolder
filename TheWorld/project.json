@@ -61,7 +61,7 @@
       "wwwroot",
       "web.config",
       "Views",
-      "config.json"
+      "appsetting.json"
     ]
   },
 

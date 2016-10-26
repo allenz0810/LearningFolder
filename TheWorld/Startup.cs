@@ -26,7 +26,7 @@ namespace TheWorld
 
             var builder = new ConfigurationBuilder()
               .SetBasePath(_env.ContentRootPath)
-              .AddJsonFile("config.json")
+              .AddJsonFile("appsetting.json")
               .AddEnvironmentVariables();
 
             _config = builder.Build();
@@ -94,7 +94,6 @@ namespace TheWorld
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app,
-          IHostingEnvironment env,
           WorldContextSeedData seeder,
           ILoggerFactory factory)
         {
@@ -104,7 +103,7 @@ namespace TheWorld
                 config.CreateMap<StopViewModel, Stop>().ReverseMap();
             });
 
-            if (env.IsEnvironment("Development"))
+            if (_env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
                 factory.AddDebug(LogLevel.Information);
@@ -114,7 +113,7 @@ namespace TheWorld
                 factory.AddDebug(LogLevel.Error);
             }
 
-            app.UseStaticFiles();
+            app.UseFileServer();
 
             app.UseIdentity();
 
