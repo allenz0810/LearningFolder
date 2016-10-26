@@ -3,7 +3,7 @@
 This is a learning project.
 It follows what Shawn Wildermuth has taught in Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular.
 
-- Update modify naming and location of code.
+- Update 1 modify naming and location of code.
 
 ---------------------
 # installation
